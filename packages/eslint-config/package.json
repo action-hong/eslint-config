@@ -1,7 +1,7 @@
 {
   "name": "@kkopite/eslint-config",
   "version": "0.0.3",
-  "description": "Anthony's ESLint config",
+  "description": "kkopite's ESLint config",
   "author": "kkopite <kkopitehong@foxmail.com> (https://github.com/action-hong/)",
   "license": "MIT",
   "homepage": "https://github.com/action-hong/eslint-config",
@@ -33,5 +33,8 @@
   },
   "devDependencies": {
     "eslint": "^8.47.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
