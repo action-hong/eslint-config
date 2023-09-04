@@ -30,8 +30,9 @@ export default createEslintRule<Options, MessageIds>({
         const code = sourceCode.text.slice(node.range[0], node.range[1])
 
         const match = code.match(RE)
-        if (!match)
+        if (!match) {
           return
+        }
 
         const labelName = node.label.name
         const spaceBeforeColon = match[2]
@@ -41,8 +42,9 @@ export default createEslintRule<Options, MessageIds>({
 
         function getReplaceValue() {
           let ret = labelName
-          if (node.optional)
+          if (node.optional) {
             ret += '?'
+          }
           ret += ': '
           ret += elementType
           return ret

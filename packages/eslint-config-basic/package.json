@@ -1,10 +1,10 @@
 {
-  "name": "@antfu/eslint-config-basic",
-  "version": "0.41.0",
+  "name": "@kkopite/eslint-config-basic",
+  "version": "0.0.1",
   "description": "",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com> (https://github.com/antfu/)",
+  "author": "kkopite <kkopitehong@foxmail.com> (https://github.com/action-hong/)",
   "license": "MIT",
-  "homepage": "https://github.com/antfu/eslint-config",
+  "homepage": "https://github.com/action-hong/eslint-config",
   "keywords": [
     "eslint-config"
   ],
@@ -19,11 +19,11 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "eslint-plugin-antfu": "workspace:*",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-import": "npm:eslint-plugin-i@2.28.0-2",
     "eslint-plugin-jsonc": "^2.9.0",
+    "eslint-plugin-kkopite": "workspace:*",
     "eslint-plugin-markdown": "^3.0.1",
     "eslint-plugin-n": "^16.0.2",
     "eslint-plugin-no-only-tests": "^3.1.0",

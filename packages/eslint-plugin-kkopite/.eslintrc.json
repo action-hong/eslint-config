@@ -1,0 +1,6 @@
+{
+  "extends": "@kkopite",
+  "plugins": [
+    "kkopite"
+  ]
+}

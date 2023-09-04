@@ -2,8 +2,9 @@ const { isPackageExists } = require('local-pkg')
 
 const TS = isPackageExists('typescript')
 
-if (!TS)
-  console.warn('[@antfu/eslint-config] TypeScript is not installed, fallback to JS only.')
+if (!TS) {
+  console.warn('[@kkopite/eslint-config] TypeScript is not installed, fallback to JS only.')
+}
 
 module.exports = {
   overrides: [
@@ -14,6 +15,8 @@ module.exports = {
         parser: '@typescript-eslint/parser',
       },
       rules: {
+        // antfu的解释他只用ts， 而ts会检查这两个错误，因此不需要这两个规则
+        // https://github.com/antfu/eslint-config/issues/72
         'no-unused-vars': 'off',
         'no-undef': 'off',
         ...(TS
@@ -25,8 +28,8 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-recommended',
     TS
-      ? '@antfu/eslint-config-ts'
-      : '@antfu/eslint-config-basic',
+      ? '@kkopite/eslint-config-ts'
+      : '@kkopite/eslint-config-basic',
   ],
   rules: {
     'vue/max-attributes-per-line': 'off',

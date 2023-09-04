@@ -1,6 +1,8 @@
-# @antfu/eslint-config
+# @kkopite/eslint-config
 
-[![npm](https://img.shields.io/npm/v/@antfu/eslint-config?color=444&label=)](https://npmjs.com/package/@antfu/eslint-config) [![code style](https://antfu.me/badge-code-style.svg)](https://github.com/antfu/eslint-config)
+[![npm](https://img.shields.io/npm/v/@kkopite/eslint-config?color=444&label=)](https://npmjs.com/package/@kkopite/eslint-config) [Code Style kkopite hong](https://github.com/action-hong/eslint-config)
+
+base [@antfu/eslint-config](https://github.com/antfu/eslint-config)
 
 - Single quotes, no semi
 - Auto fix for formatting (aimed to be used standalone **without** Prettier)
@@ -15,14 +17,14 @@
 ### Install
 
 ```bash
-pnpm add -D eslint @antfu/eslint-config
+pnpm add -D eslint @kkopite/eslint-config
 ```
 
 ### Config `.eslintrc`
 
 ```json
 {
-  "extends": "@antfu"
+  "extends": "@kkopite"
 }
 ```
 
@@ -86,7 +88,7 @@ const process = require('node:process')
 process.env.ESLINT_TSCONFIG = 'tsconfig.json'
 
 module.exports = {
-  extends: '@antfu'
+  extends: '@kkopite'
 }
 ```
 
@@ -111,16 +113,6 @@ and then
 npm i -D lint-staged simple-git-hooks
 ```
 
-## Badge
-
-If you enjoy this code style, and would like to mention it in your project, here is the badge you can use:
-
-```md
-[![code style](https://antfu.me/badge-code-style.svg)](https://github.com/antfu/eslint-config)
-```
-
-[![code style](https://antfu.me/badge-code-style.svg)](https://github.com/antfu/eslint-config)
-
 ## FAQ
 
 ### Prettier?
@@ -139,22 +131,18 @@ Sure, you can override the rules in your `.eslintrc` file.
 
 ```jsonc
 {
-  "extends": "@antfu",
+  "extends": "@kkopite",
   "rules": {
-    // your rules...
+    // if you are not using ts, add 2 line rules below 
+    // "no-unused-vars": "error",
+    // "no-undef": "error",
   }
 }
 ```
 
 Or you can always fork this repo and make your own.
 
-## Check Also
-
-- [antfu/dotfiles](https://github.com/antfu/dotfiles) - My dotfiles
-- [antfu/vscode-settings](https://github.com/antfu/vscode-settings) - My VS Code settings
-- [antfu/ts-starter](https://github.com/antfu/ts-starter) - My starter template for TypeScript library
-- [antfu/vitesse](https://github.com/antfu/vitesse) - My starter template for Vue & Vite app
-
 ## License
 
-[MIT](./LICENSE) License &copy; 2019-PRESENT [Anthony Fu](https://github.com/antfu)
+[MIT](./LICENSE) License &copy; 2023-PRESENT [kkopite](https://github.com/action-hong)
+[MIT](./LICENSE) License &copy; 2019-2023 [Anthony Fu](<https://github.com/antfu>)

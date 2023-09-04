@@ -52,7 +52,7 @@ module.exports = {
   plugins: [
     'html',
     'unicorn',
-    'antfu',
+    'kkopite',
     'no-only-tests',
     'unused-imports',
   ],
@@ -215,8 +215,8 @@ module.exports = {
         'no-undef': 'off',
         'no-unused-expressions': 'off',
         'no-unused-vars': 'off',
-        'antfu/no-cjs-exports': 'off',
-        'antfu/no-ts-export-equal': 'off',
+        'kkopite/no-cjs-exports': 'off',
+        'kkopite/no-ts-export-equal': 'off',
         'n/prefer-global/process': 'off',
       },
     },
@@ -233,7 +233,7 @@ module.exports = {
 
     // Common
     'semi': ['error', 'never'],
-    'curly': ['error', 'multi-or-nest', 'consistent'],
+    'curly': ['error', 'multi-line'],
     'quotes': ['error', 'single'],
     'quote-props': ['error', 'consistent-as-needed'],
 
@@ -407,11 +407,12 @@ module.exports = {
     'yml/quotes': ['error', { prefer: 'single', avoidEscape: false }],
     'yml/no-empty-document': 'off',
 
-    // antfu
-    'antfu/no-import-node-modules-by-path': 'error',
-    'antfu/if-newline': 'error',
-    'antfu/import-dedupe': 'error',
-    'antfu/top-level-function': 'error',
-    // 'antfu/prefer-inline-type-import': 'error',
+    // kkopite
+    'kkopite/no-import-node-modules-by-path': 'error',
+    // TODO: if 可以跟在同一行（或者如果直接return的语句允许在同一行
+    // 'kkopite/if-newline': 'error',
+    'kkopite/import-dedupe': 'error',
+    'kkopite/top-level-function': 'error',
+    // 'kkopite/prefer-inline-type-import': 'error',
   },
 }
